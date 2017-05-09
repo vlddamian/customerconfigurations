@@ -40,7 +40,7 @@ kafka:
   acks:                 1
 
 # Property overrides specific to an environment
----
+
 spring:
   profiles: prod
   data:
@@ -57,7 +57,7 @@ kafka:
   retries:              5
   acks:                 1
 
----
+
 spring:
   profiles: cert
   data:
@@ -74,7 +74,7 @@ kafka:
   retries:              5
   acks:                 1
 
----
+
 spring:
   profiles: qa
   data:
@@ -91,7 +91,7 @@ kafka:
   retries:              5
   acks:                 1
 
----
+
 spring:
   profiles: dev
   data:
@@ -108,7 +108,7 @@ kafka:
   retries:              5
   acks:                 1
 
----
+
 spring:
   profiles: local
   data:
@@ -124,7 +124,7 @@ kafka:
   retries:              5
   acks:                 1
 
----
+
 spring:
   profiles:             integration-test
   data:
