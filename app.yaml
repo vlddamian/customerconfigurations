@@ -1,6 +1,4 @@
-one: 
-  unu
-  
-two:
-  doi
-
+first_level:
+  second_level:
+    third_level:
+      my_key: my_value
