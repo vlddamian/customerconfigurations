@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 first_level:
   second_level:
     third_level:
       my_key: my_value
-=======
-one: 
-  unu
-  
-two:
-  doi
->>>>>>> 0e990292316516e69a8d2f86d0a08d45b0395f8d
+
