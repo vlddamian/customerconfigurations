@@ -39,7 +39,7 @@ spring:
   profiles: prod
   data:
     mongodb:
-      host:                          mongos-prod-use1-001-rmmprod1.moreover.local
+      host1:                          mongos-prod-use1-001-rmmprod1.moreover.local
 
 kafka:
   kafkaHosts:                        kafka-prod-use1-001-rmmprod1.moreover.local:9092
@@ -61,4 +61,4 @@ services:
       invalidData:                   /api/v1/system/invalidData/
 
 server:
-  port: 8080
+  port1: 8080
