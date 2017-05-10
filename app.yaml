@@ -34,3 +34,32 @@ kafka:
 
 server:
   port: 30010
+
+---
+spring:
+  profiles: prod
+  data:
+    mongodb:
+      host:                          mongos-prod-use1-001-rmmprod1.moreover.local
+
+kafka:
+  kafkaHosts:                        kafka-prod-use1-001-rmmprod1.moreover.local:9092
+  topicRiskEntityMatch:              rmm-customer-riskentity-match
+  consumerGroupRiskEntityMatch:      rmm-aggregator-customer-riskentity-group
+  topicCustomerArticleMatch:         rmm-customer-article-match
+  consumerGroupCustomerArticleMatch: rmm-aggregator-customer-article-group
+  autoOffsetReset:                   latest
+  enableAutoCommit:                  false
+  kafkaConsumers:                    1
+  pollingIntervalMs:                 10000
+  retries:                           5
+  acks:                              1
+
+services:
+  systemService:
+    urlRoot:                         system-service.default:80
+    endpoints:
+      invalidData:                   /api/v1/system/invalidData/
+
+server:
+  port: 8080
