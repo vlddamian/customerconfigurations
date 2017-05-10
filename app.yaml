@@ -34,7 +34,6 @@ kafka:
 
 server:
   port: 30010
-
 ---
 spring:
   profiles: prod
